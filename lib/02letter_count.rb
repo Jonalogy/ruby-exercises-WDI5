@@ -7,13 +7,11 @@
 #
 # > {"b" => 1, "a" => 3, "n" => 2}
 
-def letter_count (apple)
-  apple.split!
-
+def letter_count(string)
+	counts = Hash.new(0)
+	string.each_char { |element| counts[element]+=1 }
+	# return counts
 end
 
-foo = {
-  string: "I want to eat wanton"
-}
-
-letter_count(foo)
+letter_count('banana')
+Add Comment C
